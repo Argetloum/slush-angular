@@ -1,6 +1,4 @@
-angular
-  .module('<%= modulename %>.todo')
-  .controller('TodoCtrl', function ($scope, $window) {
+angular.module('AcmeModule').controller('AcmeCtrl', function ($scope, $window) {
     'use strict';
     $scope.todos = JSON.parse($window.localStorage.getItem('todos') || '[]');
     $scope.$watch('todos', function (newTodos, oldTodos) {
